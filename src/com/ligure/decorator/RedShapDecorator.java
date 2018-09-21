@@ -8,7 +8,7 @@ public class RedShapDecorator extends ShapeDecorator {
         super(shap);
     }
     public void draw() {
-        decorator.draw();
+        shap.draw();
         System.out.println("填充红色边框");
     }
 }

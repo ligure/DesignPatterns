@@ -24,7 +24,7 @@ public class Subject {
     }
     public void notified() {
         for (Observer o : list) {
-            o.update(state);
+            o.update(this);
         }
     }
 }

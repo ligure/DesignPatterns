@@ -5,8 +5,8 @@ package com.ligure.observer;
  */
 public class OctalObserver extends Observer {
     @Override
-    public void update(int state) {
-        this.state = state;
+    public void update(Subject subject) {
+        this.state = subject.getState();
         System.out.println("Octal String: " + Integer.toOctalString(state));
     }
 }

@@ -5,5 +5,5 @@ package com.ligure.observer;
  */
 public abstract class Observer {
     protected int state;
-    public abstract void update(int state);
+    public abstract void update(Subject subject);
 }
